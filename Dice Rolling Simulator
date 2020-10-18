@@ -1,0 +1,14 @@
+from tkinter import*
+import random
+window=Tk()
+
+def action():
+    v=random.random()
+    
+    text_principal=Label(window,text=v)
+    text_principal.pack()  
+
+button=Button(window,text="New Value",command=action)
+button.pack()
+
+window.mainloop()
